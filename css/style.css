@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: BA;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a
+li {
+    text-decoration: none;
+    font-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+main {
+    min-height: 100vh;
+    padding-top: 128px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header*/
+#header {
+    background-color: black;
+    height: 128px;
+    width: 100%;
+    position: fixed;
+    padding-top: 20px;
+    z-index: 100;
+}
+
+/*NAVBAR*/
+#header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ #navBar li {
+        padding: 0 10px; 
+    }  
+    
+
+#navBar a{
+    text-decoration: none;
+    color: #fcfcfc;
+}
+#navBar{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    
+}
+
+#header nav img {
+    width: 97px;
+    height: 85.6px;
+    margin-right:auto;
+    margin-left: 30px;
+} 
+
+/*FONDO*/
+#main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/index/fondo-musica-auriculares-manos-femeninas-grabadora-portatil-guitarra.jpg);
+    background-size: cover;
+    overflow-x: auto;
+}
+
+/* main */
+#main section {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#main section article img {
+    width: 100%; 
+    max-width: 800px; 
+    height: auto;  
+    padding-top: 10%; 
+}
+
+/* main */
+#main section {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#main section article img {
+    width: 100%; 
+    max-width: 800px; 
+    height: auto;  
+    padding-top: 10%; 
+}
+
+.ArticuloDestacado {
+    color: #171790;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin: 20px; 
+    width: 80%; 
+    max-width: 600px; 
+    text-align: justify;
+    overflow: auto;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: black;
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    backdrop-filter: blu;
+}
+
+.footerRedes {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.footerTerminosPrivacidad ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.logoFooter {
+    display: flex;
+    align-items: center;
+}
+
+/*ARTISTAS PAGE*/
+
+/*main artistas*/
+#mainArtistas {
+    background-image: url(../images/artistas/bailando-concierto-mientras-cantante-actua-rodeada-luces.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: auto;
+}
+#mainArtistas section {
+    padding: 20px;
+    width: calc(100%-40%);
+    margin: 20px;
+    text-align: center;
+}
+
+#mainArtistas section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#mainArtistas section iframe {
+    width: 100%;
+    max-width: 1000px;
+}
+
+#mainArtistas #globales {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainArtistas #globales h2 {
+    text-align: center;
+}
+
+#mainArtistas #nuevos {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainArtistas #nuevos h2 {
+    text-align: center;
+}
+
+#mainArtistas #nacionales {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainArtistas #nacionales h2 {
+    
+    text-align: center;
+}
+
+#mainArtistas section iframe {
+    width: 100%
+}
+#mainArtistas #recomendacionSemanal h2 {
+    
+    text-align: center;
+}
+#mainArtistas #recomendacionSemanal {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+}
+#mainArtistas #recomendacionNacional {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: 80%;
+    max-width: 600%;
+    margin: 20px;
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+@media only screen and (min-width: 768px) {
+    #mainArtistas #globales,
+    #mainArtistas #nuevos,
+    #mainArtistas #nacionales,
+    #mainArtistas #recomendacionSemanal,
+    #mainArtistas #recomendacionNacional {
+        width: 45%; 
+        max-width: none;
+    }
+   
+/*NOTICIAS PAGE*/
+
+#mainNoticias {
+    background-image: url(../images/noticias/banernoticias.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.CancionDia {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin: 20px; 
+    width: 80%; 
+    max-width: 600px; 
+    text-align: center;
+    
+}
+
+
+.NuevosLanzamientos {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin: 20px; 
+    width: 80%; 
+    max-width: 600px; 
+    text-align: center;
+}
+
+/*RESEÑAS PAGE*/
+
+#mainReseñas {
+    background-image: url(../images/reseñas/guitarra-explotacion-mano-vista-superior.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainReseñas h1 {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: auto;
+    text-align: center;
+    color: rgb(0, 0, 0) ;
+    padding: 20px; 
+    margin: 20px 0; 
+}
+
+.Reseña1 {
+    background-color: rgba(255, 255, 255, 0.8); 
+    margin: 20px; 
+    padding: 30px 40px;
+    width: fit-content;
+    max-width: 80%; 
+    text-align: center; 
+}
+
+
+.Reseña2 {
+    background-color: rgba(255, 255, 255, 0.8); 
+    margin: 20px; 
+    padding: 30px 40px;
+    width: fit-content;
+    max-width: 80%; 
+    text-align: center; 
+}
+
+
+
+.Reseña3 {
+    background-color: rgba(255, 255, 255, 0.8); 
+    margin: 20px; 
+    padding: 30px 40px;
+    width: fit-content;
+    max-width: 80%; 
+    text-align: center; 
+}
+
+/*SUSCRIBETE PAGE*/
+
+
+/* mainSuscribete */
+#mainSuscribete {
+    background-image: url(../images/suscribete/unsplash-image-Oaqk7qqNh_c.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* suscribete, news */
+.suscribete, .news {
+    width: 80%;
+    max-width: 600px; /* Ajusta según tus necesidades */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 20px; /* Ajusta según tus necesidades */
+    text-align: center; /* Centro el texto */
+}
+
+/* Añadido para hacer responsive */
+@media only screen and (min-width: 768px) {
+    .suscribete, .news {
+        width: 60%; /* Ajusta según tus necesidades */
+    }
+}
+
+
+
+
+
+}
