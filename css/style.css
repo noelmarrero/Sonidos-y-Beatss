@@ -191,7 +191,7 @@ footer {
 }
 
 #mainArtistas #globales {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.562);  
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -203,7 +203,7 @@ footer {
 }
 
 #mainArtistas #nuevos {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color:rgba(255, 255, 255, 0.562); 
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -215,7 +215,7 @@ footer {
 }
 
 #mainArtistas #nacionales {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.562);  
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -235,7 +235,7 @@ footer {
     text-align: center;
 }
 #mainArtistas #recomendacionSemanal {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.562);  
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -243,7 +243,7 @@ footer {
     
 }
 #mainArtistas #recomendacionNacional {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.562); 
     width: 80%;
     max-width: 600%;
     margin: 20px;
@@ -276,7 +276,7 @@ footer {
 }
 
 .CancionDia {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.562); 
     padding: 20px; 
     border-radius: 10px; 
     margin: 20px; 
@@ -288,7 +288,7 @@ footer {
 
 
 .NuevosLanzamientos {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.562); 
     padding: 20px; 
     border-radius: 10px; 
     margin: 20px; 
@@ -310,7 +310,7 @@ footer {
 }
 
 #mainReseñas h1 {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.562);  
     width: auto;
     text-align: center;
     color: rgb(0, 0, 0) ;
@@ -319,7 +319,7 @@ footer {
 }
 
 .Reseña1 {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.562);  
     margin: 20px; 
     padding: 30px 40px;
     width: fit-content;
@@ -329,7 +329,7 @@ footer {
 
 
 .Reseña2 {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.562); 
     margin: 20px; 
     padding: 30px 40px;
     width: fit-content;
@@ -340,7 +340,7 @@ footer {
 
 
 .Reseña3 {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.562); 
     margin: 20px; 
     padding: 30px 40px;
     width: fit-content;
