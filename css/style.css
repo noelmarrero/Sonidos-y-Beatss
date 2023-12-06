@@ -63,6 +63,10 @@ main {
 #navBar a{
     text-decoration: none;
     color: #fcfcfc;
+    transition: transform 0.3s;
+}
+#navBar a:hover {
+    transform: scale(1.2);
 }
 #navBar{
     display: flex;
@@ -70,6 +74,10 @@ main {
     margin-right: 15px;
     
 }
+#navBar {
+    background-color: transparent !important;
+}
+
 
 #header nav img {
     width: 97px;
@@ -77,7 +85,10 @@ main {
     margin-right:auto;
     margin-left: 30px;
 } 
-
+.highlight-on-hover:hover {
+    transform: scale(1.2); 
+    transition: transform 0.3s;
+} 
 /*FONDO*/
 #main {
     width: 100%;
@@ -137,7 +148,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     margin-top: auto;
-    backdrop-filter: blu;
+    color: white;
 }
 
 .footerRedes {
@@ -152,7 +163,14 @@ footer {
     text-align: center;
     align-items: center;
 }
-
+.footerTerminosPrivacidad a{
+    color: white;
+    text-decoration: none;
+}
+.footerPrivacidad a {
+    color: white;
+    text-decoration: none;
+}
 .logoFooter {
     display: flex;
     align-items: center;
@@ -366,19 +384,19 @@ footer {
 /* suscribete, news */
 .suscribete, .news {
     width: 80%;
-    max-width: 600px; /* Ajusta según tus necesidades */
+    max-width: 600px; 
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     font-size: large;
-    margin-top: 20px; /* Ajusta según tus necesidades */
-    text-align: center; /* Centro el texto */
+    margin-top: 20px;
+    text-align: center; 
 }
 
 /* Añadido para hacer responsive */
 @media only screen and (min-width: 768px) {
     .suscribete, .news {
-        width: 60%; /* Ajusta según tus necesidades */
+        width: 60%; 
     }
 }
 

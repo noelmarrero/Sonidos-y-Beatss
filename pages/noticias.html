@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
     <title>Noticias</title>
     </head>
     <body>
           <!--1# ETIQUETA-->
-        <header id="header">
-            <nav id="navBar">
-                <img src="../icons/logo/SonidosyBeats.png" alt="LOGO">
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="../pages/artistas.html">ARTISTAS</a></li>
-                    <li><a href="#">NOTICIAS</a></li>
-                    <li><a href="../pages/reseñas.html">RESEÑAS</a></li>
-                    <li><a href="../pages/suscribete.html">SUSCRIBETE</a></li>
-                </ul>
+          <header id="header">
+            <nav id="navBar" class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img class="imagen-logo" src="../icons/logo/SonidosyBeats.png" alt="logo" width="30" height="30">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link highlight-on-hover" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link highlight-on-hover" href="../pages/artistas.html">ARTISTAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link highlight-on-hover" href="#">NOTICIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link highlight-on-hover" href="../pages/reseñas.html">RESEÑAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link highlight-on-hover" href="../pages/suscribete.html">SUSCRIBETE</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <!--2# ETIQUETA-->
         <main id="mainNoticias">
            <section class="CancionDia">
-            <h1>Cancion del dia</h1>
+            <h1>Canción del dia</h1>
             <br>
-            <h2>"Fairy of shampoo"-TXT</h2>
+            <h2>"Video Games"-Lana Del Rey</h2>
            <br>
            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0fBSs3fRoh1yJcne77fdu9?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </section>
@@ -56,22 +75,35 @@
             </section>
         </main>
         <!--3# ETIQUETA-->
-        <footer id="footer">
-            <article class="logoFooter"><img src="../icons/logo/SonidosyBeats.png" alt="logo2" height="85.6px">
-            </article>
-            <article class="footerTerminosPrivacidad">
+        <footer class="footer">
+            <div class="logoFooter">
+                <img src="../icons/logo/SonidosyBeats.png" alt="logo2" height="85.6px">
+            </div>
+    
+            <div class="footerTerminosPrivacidad">
                 <ul>
-                    <li><a href="pages/terminos-de-servicio.html">Terminos de servicio</a></li>
-                    <li><a href="pages/politica-de-privacidad.html">Politica de privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li class="footerPrivacidad"><a href="#">Políticas de Privacidad</a></li>
                 </ul>
-            </article> 
-                
-                <article class="footerRedes">
-                    <img src="../icons/redes/Facebook/RiFacebookFill.png" alt="Facebook" height="40px">
-                    <img src="../icons/redes/Instagram/MdiInstagram.png" alt="Instagram"height="40px">
-                    <img src="../icons/redes/Spotify/MdiSpotify.png" alt="Spotify"height="40px">
-                    <img src="../icons/redes/X/RiTwitterXFill.png" alt="X"height="40px">
-                </article>
+            </div>
+    
+            <div class="footerRedes">
+                <a href="#" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="#" class="btn btn-info" target="_blank">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="#" class="btn btn-danger" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="#" class="btn btn-success" target="_blank">
+                    <i class="fab fa-spotify"></i> Spotify
+                </a>
+            </div>
         </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
