@@ -145,8 +145,10 @@ footer {
     width: 100%;
     bottom: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
     margin-top: auto;
     color: white;
 }
@@ -155,17 +157,24 @@ footer {
     gap: 15px;
     display: flex;
     align-items: center;
+    margin-bottom: 10px; 
+}
+.footerTerminosPrivacidad {
+    text-align: center;
+    margin-bottom: 10px; 
 }
 
 .footerTerminosPrivacidad ul {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
+    list-style: none;
+    padding: 0;
 }
 .footerTerminosPrivacidad a{
     color: white;
     text-decoration: none;
+    margin: 5px 0;
 }
 .footerPrivacidad a {
     color: white;
@@ -174,8 +183,26 @@ footer {
 .logoFooter {
     display: flex;
     align-items: center;
+    margin-bottom: 10px; 
 }
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .footerRedes {
+        margin-bottom: 0;  
+    }
+
+    .footerTerminosPrivacidad {
+        margin-bottom: 0;  
+    }
+
+    .logoFooter {
+        margin-bottom: 0;  
+    }
+}
 /*ARTISTAS PAGE*/
 
 /*main artistas*/
