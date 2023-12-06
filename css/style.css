@@ -1,13 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: BA;
+    background-color: BA; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-a
-li {
+a, li {
     text-decoration: none;
     font-style: none;
 }
@@ -19,27 +18,15 @@ li {
 body {
     position: relative;
     min-height: 100vh;
+    margin: 0; 
 }
+
 main {
     min-height: 100vh;
     padding-top: 128px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*header*/
+/* Header */
 #header {
     background-color: black;
     height: 128px;
@@ -49,18 +36,24 @@ main {
     z-index: 100;
 }
 
-/*NAVBAR*/
-#header nav ul {
+/* Navbar */
+#navBar {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    background-color: transparent !important;
+}
+
+#navBar ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
- #navBar li {
-        padding: 0 10px; 
-    }  
-    
+#navBar li {
+    padding: 0 10px;
+}
 
-#navBar a{
+#navBar a {
     text-decoration: none;
     color: #fcfcfc;
     transition: transform 0.3s;
@@ -68,77 +61,60 @@ main {
 #navBar a:hover {
     transform: scale(1.2);
 }
-#navBar{
-    display: flex;
-    align-items: center;
-    margin-right: 15px;
-    
-}
-#navBar {
-    background-color: transparent !important;
-}
-
 
 #header nav img {
     width: 97px;
     height: 85.6px;
-    margin-right:auto;
+    margin-right: auto;
     margin-left: 30px;
-} 
+}
 .highlight-on-hover:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
     transition: transform 0.3s;
-} 
-/*FONDO*/
+}
+/* Main */
 #main {
     width: 100%;
-    height: 100vh;
+    min-height: calc(100vh - 128px); 
     background-image: url(../images/index/fondo-musica-auriculares-manos-femeninas-grabadora-portatil-guitarra.jpg);
     background-size: cover;
     overflow-x: auto;
 }
 
-/* main */
 #main section {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
 }
 
 #main section article img {
-    width: 100%; 
-    max-width: 800px; 
-    height: auto;  
-    padding-top: 10%; 
-}
-
-/* main */
-#main section {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-}
-
-#main section article img {
-    width: 100%; 
-    max-width: 800px; 
-    height: auto;  
-    padding-top: 10%; 
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    padding-top: 10%;
 }
 
 .ArticuloDestacado {
     color: #171790;
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 20px; 
-    border-radius: 10px; 
-    margin: 20px; 
-    width: 80%; 
-    max-width: 600px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 80%;
+    max-width: 600px;
     text-align: justify;
     overflow: auto;
 }
 
-/* PIE DE PAGINA */
+@media only screen and (max-width: 768px) {
+    .ArticuloDestacado {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+/* Footer */
 footer {
     background-color: black;
     height: auto;
@@ -157,11 +133,12 @@ footer {
     gap: 15px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
+
 .footerTerminosPrivacidad {
     text-align: center;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .footerTerminosPrivacidad ul {
@@ -171,45 +148,42 @@ footer {
     list-style: none;
     padding: 0;
 }
-.footerTerminosPrivacidad a{
+
+.footerTerminosPrivacidad a {
     color: white;
     text-decoration: none;
     margin: 5px 0;
 }
+
 .footerPrivacidad a {
     color: white;
     text-decoration: none;
 }
+
 .logoFooter {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
+
 @media (max-width: 768px) {
     footer {
         flex-direction: column;
         text-align: center;
     }
 
-    .footerRedes {
-        margin-bottom: 0;  
-    }
-
-    .footerTerminosPrivacidad {
-        margin-bottom: 0;  
-    }
-
+    .footerRedes,
+    .footerTerminosPrivacidad,
     .logoFooter {
-        margin-bottom: 0;  
+        margin-bottom: 0;
     }
 }
-/*ARTISTAS PAGE*/
 
-/*main artistas*/
+/* Artistas Page - Main Artistas */
 #mainArtistas {
     background-image: url(../images/artistas/bailando-concierto-mientras-cantante-actua-rodeada-luces.jpg);
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 128px); 
     background-size: cover;
     display: flex;
     justify-content: space-around;
@@ -218,9 +192,10 @@ footer {
     flex-direction: column;
     overflow-x: auto;
 }
+
 #mainArtistas section {
     padding: 20px;
-    width: calc(100%-40%);
+    width: calc(100% - 40%);
     margin: 20px;
     text-align: center;
 }
@@ -235,172 +210,141 @@ footer {
     max-width: 1000px;
 }
 
-#mainArtistas #globales {
-    background-color: rgba(255, 255, 255, 0.562);  
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-}
-
-#mainArtistas #globales h2 {
-    text-align: center;
-}
-
-#mainArtistas #nuevos {
-    background-color:rgba(255, 255, 255, 0.562); 
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-}
-
-#mainArtistas #nuevos h2 {
-    text-align: center;
-}
-
-#mainArtistas #nacionales {
-    background-color: rgba(255, 255, 255, 0.562);  
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-}
-
-#mainArtistas #nacionales h2 {
-    
-    text-align: center;
-}
-
-#mainArtistas section iframe {
-    width: 100%
-}
-#mainArtistas #recomendacionSemanal h2 {
-    
-    text-align: center;
-}
-#mainArtistas #recomendacionSemanal {
-    background-color: rgba(255, 255, 255, 0.562);  
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    
-}
+#mainArtistas #globales,
+#mainArtistas #nuevos,
+#mainArtistas #nacionales,
+#mainArtistas #recomendacionSemanal,
 #mainArtistas #recomendacionNacional {
-    background-color: rgba(255, 255, 255, 0.562); 
-    width: 80%;
-    max-width: 600%;
-    margin: 20px;
-    padding: 20px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.562);
+    width: 45%;
+    max-width: none;
 }
-@media only screen and (min-width: 768px) {
+
+@media only screen and (max-width: 768px) {
     #mainArtistas #globales,
     #mainArtistas #nuevos,
     #mainArtistas #nacionales,
     #mainArtistas #recomendacionSemanal,
     #mainArtistas #recomendacionNacional {
-        width: 45%; 
-        max-width: none;
+        width: 90%;
     }
-   
-/*NOTICIAS PAGE*/
+}
 
+/* Noticias Page - Main Noticias */
 #mainNoticias {
     background-image: url(../images/noticias/banernoticias.jpg);
     width: 100%;
-    height: 100vh;
+    min-height: calc(100vh - 128px); 
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    flex-direction: column;
 }
 
-.CancionDia {
-    background-color: rgba(255, 255, 255, 0.562); 
-    padding: 20px; 
-    border-radius: 10px; 
-    margin: 20px; 
-    width: 80%; 
-    max-width: 600px; 
-    text-align: center;
-    
-}
-
-
+.CancionDia,
 .NuevosLanzamientos {
-    background-color: rgba(255, 255, 255, 0.562); 
-    padding: 20px; 
-    border-radius: 10px; 
-    margin: 20px; 
-    width: 80%; 
-    max-width: 600px; 
+    background-color: rgba(255, 255, 255, 0.562);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 80%;
+    max-width: 600px;
     text-align: center;
 }
+@media only screen and (max-width: 768px) {
+    .CancionDia,
+    .NuevosLanzamientos {
+        width: 90%;
+        max-width: none;
+    }
+}
 
-/*RESEÑAS PAGE*/
+@media only screen and (min-width: 768px) {
+    .CancionDia,
+    .NuevosLanzamientos {
+        width: 60%;
+        max-width: none;
+    }
+}
 
+@media only screen and (min-width: 992px) {
+    .CancionDia,
+    .NuevosLanzamientos {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .CancionDia,
+    .NuevosLanzamientos {
+        width: 90%;
+    }
+}
+
+/* Reseñas Page - Main Reseñas */
 #mainReseñas {
-    background-image: url(../images/reseñas/guitarra-explotacion-mano-vista-superior.jpg);
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 128px); 
+    background-image: url(../images/reseñas/guitarra-explotacion-mano-vista-superior.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: auto;
+}
+
+#mainReseñas section {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 128px; 
 }
 
 #mainReseñas h1 {
-    background-color: rgba(255, 255, 255, 0.562);  
-    width: auto;
+    width: 80%;
+    max-width: 600px;
     text-align: center;
-    color: rgb(0, 0, 0) ;
-    padding: 20px; 
-    margin: 20px 0; 
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 20px auto;
 }
 
-.Reseña1 {
-    background-color: rgba(255, 255, 255, 0.562);  
-    margin: 20px; 
+.ReviewBox {
+    margin: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.ReviewBox article {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.562);
     padding: 30px 40px;
-    width: fit-content;
-    max-width: 80%; 
-    text-align: center; 
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+    #mainReseñas h1 {
+        width: 50%;
+        max-width: none;
+    }
 
-.Reseña2 {
-    background-color: rgba(255, 255, 255, 0.562); 
-    margin: 20px; 
-    padding: 30px 40px;
-    width: fit-content;
-    max-width: 80%; 
-    text-align: center; 
+    .ReviewBox {
+        width: 50%;
+        max-width: none;
+    }
 }
 
-
-
-.Reseña3 {
-    background-color: rgba(255, 255, 255, 0.562); 
-    margin: 20px; 
-    padding: 30px 40px;
-    width: fit-content;
-    max-width: 80%; 
-    text-align: center; 
-}
-
-/*SUSCRIBETE PAGE*/
-
-
+/* Suscríbete Page - Main Suscríbete */
 /* mainSuscribete */
 #mainSuscribete {
-    background-image: url(../images/suscribete/unsplash-image-Oaqk7qqNh_c.png);
+    background-image: url(../images/suscribete/news.jpg);
     width: 100%;
-    height: 100vh;
+    min-height: calc(100vh - 128px); 
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -411,24 +355,19 @@ footer {
 /* suscribete, news */
 .suscribete, .news {
     width: 80%;
-    max-width: 600px; 
+    max-width: 600px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     font-size: large;
     margin-top: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
-/* Añadido para hacer responsive */
 @media only screen and (min-width: 768px) {
-    .suscribete, .news {
-        width: 60%; 
+    .suscribete,
+    .news {
+        width: 50%;
+        max-width: none;
     }
-}
-
-
-
-
-
 }
