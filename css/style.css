@@ -49,6 +49,7 @@ main {
     padding: 0;
     margin: 0;
 }
+
 #navBar li {
     padding: 0 10px;
 }
@@ -58,6 +59,7 @@ main {
     color: #fcfcfc;
     transition: transform 0.3s;
 }
+
 #navBar a:hover {
     transform: scale(1.2);
 }
@@ -68,10 +70,34 @@ main {
     margin-right: auto;
     margin-left: 30px;
 }
-.highlight-on-hover:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s;
+
+@media (max-width: 768px) {
+    #navBar {
+        background-color: black; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    #navBar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 15px 0; 
+        margin: 0;
+        background-color: black; 
+    }
+
+    #navBar li {
+        padding: 5px 0; 
+    }
+
 }
+
+
 /* Main */
 #main {
     width: 100%;
@@ -244,7 +270,7 @@ footer {
     align-items: center;
     flex-direction: column;
 }
-
+.recitalesCerca,
 .CancionDia,
 .NuevosLanzamientos {
     background-color: rgba(255, 255, 255, 0.562);
@@ -256,6 +282,7 @@ footer {
     text-align: center;
 }
 @media only screen and (max-width: 768px) {
+    .recitalesCerca,
     .CancionDia,
     .NuevosLanzamientos {
         width: 90%;
@@ -264,6 +291,7 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+    .recitalesCerca,
     .CancionDia,
     .NuevosLanzamientos {
         width: 60%;
@@ -272,6 +300,7 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+    .recitalesCerca,
     .CancionDia,
     .NuevosLanzamientos {
         width: 50%;
@@ -279,6 +308,7 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    .recitalesCerca,
     .CancionDia,
     .NuevosLanzamientos {
         width: 90%;
