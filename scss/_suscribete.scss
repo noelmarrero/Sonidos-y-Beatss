@@ -1,0 +1,34 @@
+@import '_header';
+/* Suscríbete Page - Main Suscríbete */
+/* mainSuscribete */
+#mainSuscribete {
+    background-image: url(../images/suscribete/news.jpg);
+    width: 100%;
+    min-height: calc(100vh - 128px); 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* suscribete, news */
+.suscribete, .news {
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .suscribete,
+    .news {
+        width: 50%;
+        max-width: none;
+    }
+}
+@import '_footer';

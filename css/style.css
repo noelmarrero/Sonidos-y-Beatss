@@ -1,0 +1,1048 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a, li {
+  text-decoration: none;
+  font-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+  padding-top: 128px;
+}
+
+#header {
+  background-color: black;
+  height: 128px;
+  width: 100%;
+  position: fixed;
+  padding-top: 20px;
+  z-index: 100;
+}
+
+/* Navbar */
+#navBar {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  background-color: transparent !important;
+}
+
+#navBar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navBar li {
+  padding: 0 10px;
+}
+
+#navBar a {
+  text-decoration: none;
+  color: #fcfcfc;
+  transition: transform 0.3s;
+}
+
+#navBar a:hover {
+  transform: scale(1.2);
+}
+
+#header nav img {
+  width: 97px;
+  height: 85.6px;
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  #navBar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  #navBar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+    background-color: black;
+  }
+  #navBar li {
+    padding: 5px 0;
+  }
+}
+#header {
+  background-color: black;
+  height: 128px;
+  width: 100%;
+  position: fixed;
+  padding-top: 20px;
+  z-index: 100;
+}
+
+/* Navbar */
+#navBar {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  background-color: transparent !important;
+}
+
+#navBar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navBar li {
+  padding: 0 10px;
+}
+
+#navBar a {
+  text-decoration: none;
+  color: #fcfcfc;
+  transition: transform 0.3s;
+}
+
+#navBar a:hover {
+  transform: scale(1.2);
+}
+
+#header nav img {
+  width: 97px;
+  height: 85.6px;
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  #navBar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  #navBar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+    background-color: black;
+  }
+  #navBar li {
+    padding: 5px 0;
+  }
+}
+#main {
+  width: 100%;
+  min-height: calc(100vh - 128px);
+  background-image: url(../images/index/fondo-musica-auriculares-manos-femeninas-grabadora-portatil-guitarra.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+#main section {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+}
+
+#main section article img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  padding-top: 10%;
+}
+
+.ArticuloDestacado {
+  color: #171790;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  width: 80%;
+  max-width: 600px;
+  text-align: justify;
+  overflow: auto;
+}
+
+.ArticuloDestacado h2 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .ArticuloDestacado {
+    width: 90%;
+    max-width: none;
+  }
+}
+/* Footer */
+footer {
+  background-color: black;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: auto;
+  color: white;
+}
+
+.footerRedes {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footerTerminosPrivacidad {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footerTerminosPrivacidad ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footerTerminosPrivacidad a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footerPrivacidad a {
+  color: white;
+  text-decoration: none;
+}
+
+.logoFooter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerRedes,
+  .footerTerminosPrivacidad,
+  .logoFooter {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+}
+#header {
+  background-color: black;
+  height: 128px;
+  width: 100%;
+  position: fixed;
+  padding-top: 20px;
+  z-index: 100;
+}
+
+/* Navbar */
+#navBar {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  background-color: transparent !important;
+}
+
+#navBar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navBar li {
+  padding: 0 10px;
+}
+
+#navBar a {
+  text-decoration: none;
+  color: #fcfcfc;
+  transition: transform 0.3s;
+}
+
+#navBar a:hover {
+  transform: scale(1.2);
+}
+
+#header nav img {
+  width: 97px;
+  height: 85.6px;
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  #navBar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  #navBar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+    background-color: black;
+  }
+  #navBar li {
+    padding: 5px 0;
+  }
+}
+/* Artistas Page - Main Artistas */
+#mainArtistas {
+  background-image: url(../images/artistas/bailando-concierto-mientras-cantante-actua-rodeada-luces.jpg);
+  width: 100%;
+  min-height: calc(100vh - 128px);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+#mainArtistas section {
+  padding: 20px;
+  width: 100%;
+  margin: 20px;
+  text-align: center;
+}
+
+#mainArtistas section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#mainArtistas section iframe {
+  width: 100%;
+  max-width: 1000px;
+}
+
+#mainArtistas #globales,
+#mainArtistas #nuevos,
+#mainArtistas #nacionales,
+#mainArtistas #recomendacionSemanal,
+#mainArtistas #recomendacionNacional {
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 45%;
+  max-width: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #mainArtistas #globales,
+  #mainArtistas #nuevos,
+  #mainArtistas #nacionales,
+  #mainArtistas #recomendacionSemanal,
+  #mainArtistas #recomendacionNacional {
+    width: 90%;
+  }
+}
+/* Footer */
+footer {
+  background-color: black;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: auto;
+  color: white;
+}
+
+.footerRedes {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footerTerminosPrivacidad {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footerTerminosPrivacidad ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footerTerminosPrivacidad a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footerPrivacidad a {
+  color: white;
+  text-decoration: none;
+}
+
+.logoFooter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerRedes,
+  .footerTerminosPrivacidad,
+  .logoFooter {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+}
+#header {
+  background-color: black;
+  height: 128px;
+  width: 100%;
+  position: fixed;
+  padding-top: 20px;
+  z-index: 100;
+}
+
+/* Navbar */
+#navBar {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  background-color: transparent !important;
+}
+
+#navBar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navBar li {
+  padding: 0 10px;
+}
+
+#navBar a {
+  text-decoration: none;
+  color: #fcfcfc;
+  transition: transform 0.3s;
+}
+
+#navBar a:hover {
+  transform: scale(1.2);
+}
+
+#header nav img {
+  width: 97px;
+  height: 85.6px;
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  #navBar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  #navBar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+    background-color: black;
+  }
+  #navBar li {
+    padding: 5px 0;
+  }
+}
+/* Noticias Page - Main Noticias */
+#mainNoticias {
+  background-image: url(../images/noticias/banernoticias.jpg);
+  width: 100%;
+  min-height: calc(100vh - 128px);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.recitalesCerca,
+.CancionDia,
+.NuevosLanzamientos {
+  background-color: rgba(255, 255, 255, 0.562);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .recitalesCerca,
+  .CancionDia,
+  .NuevosLanzamientos {
+    width: 90%;
+    max-width: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .recitalesCerca,
+  .CancionDia,
+  .NuevosLanzamientos {
+    width: 60%;
+    max-width: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .recitalesCerca,
+  .CancionDia,
+  .NuevosLanzamientos {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .recitalesCerca,
+  .CancionDia,
+  .NuevosLanzamientos {
+    width: 90%;
+  }
+}
+/* Footer */
+footer {
+  background-color: black;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: auto;
+  color: white;
+}
+
+.footerRedes {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footerTerminosPrivacidad {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footerTerminosPrivacidad ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footerTerminosPrivacidad a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footerPrivacidad a {
+  color: white;
+  text-decoration: none;
+}
+
+.logoFooter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerRedes,
+  .footerTerminosPrivacidad,
+  .logoFooter {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+}
+#header {
+  background-color: black;
+  height: 128px;
+  width: 100%;
+  position: fixed;
+  padding-top: 20px;
+  z-index: 100;
+}
+
+/* Navbar */
+#navBar {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  background-color: transparent !important;
+}
+
+#navBar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navBar li {
+  padding: 0 10px;
+}
+
+#navBar a {
+  text-decoration: none;
+  color: #fcfcfc;
+  transition: transform 0.3s;
+}
+
+#navBar a:hover {
+  transform: scale(1.2);
+}
+
+#header nav img {
+  width: 97px;
+  height: 85.6px;
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  #navBar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  #navBar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+    background-color: black;
+  }
+  #navBar li {
+    padding: 5px 0;
+  }
+}
+/* Reseñas Page - Main Reseñas */
+#mainReseñas {
+  width: 100%;
+  min-height: calc(100vh - 128px);
+  background-image: url(../images/reseñas/guitarra-explotacion-mano-vista-superior.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: auto;
+}
+
+#mainReseñas section {
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#mainReseñas h1 {
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.ReviewBox {
+  margin: 20px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.ReviewBox article {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.562);
+  padding: 30px 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  #mainReseñas h1 {
+    width: 50%;
+    max-width: none;
+  }
+  .ReviewBox {
+    width: 50%;
+    max-width: none;
+  }
+}
+/* Footer */
+footer {
+  background-color: black;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: auto;
+  color: white;
+}
+
+.footerRedes {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footerTerminosPrivacidad {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footerTerminosPrivacidad ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footerTerminosPrivacidad a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footerPrivacidad a {
+  color: white;
+  text-decoration: none;
+}
+
+.logoFooter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerRedes,
+  .footerTerminosPrivacidad,
+  .logoFooter {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+}
+#header {
+  background-color: black;
+  height: 128px;
+  width: 100%;
+  position: fixed;
+  padding-top: 20px;
+  z-index: 100;
+}
+
+/* Navbar */
+#navBar {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  background-color: transparent !important;
+}
+
+#navBar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navBar li {
+  padding: 0 10px;
+}
+
+#navBar a {
+  text-decoration: none;
+  color: #fcfcfc;
+  transition: transform 0.3s;
+}
+
+#navBar a:hover {
+  transform: scale(1.2);
+}
+
+#header nav img {
+  width: 97px;
+  height: 85.6px;
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  #navBar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  #navBar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+    background-color: black;
+  }
+  #navBar li {
+    padding: 5px 0;
+  }
+}
+/* Suscríbete Page - Main Suscríbete */
+/* mainSuscribete */
+#mainSuscribete {
+  background-image: url(../images/suscribete/news.jpg);
+  width: 100%;
+  min-height: calc(100vh - 128px);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* suscribete, news */
+.suscribete, .news {
+  width: 80%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: large;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .suscribete,
+  .news {
+    width: 50%;
+    max-width: none;
+  }
+}
+/* Footer */
+footer {
+  background-color: black;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: auto;
+  color: white;
+}
+
+.footerRedes {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footerTerminosPrivacidad {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footerTerminosPrivacidad ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footerTerminosPrivacidad a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footerPrivacidad a {
+  color: white;
+  text-decoration: none;
+}
+
+.logoFooter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerRedes,
+  .footerTerminosPrivacidad,
+  .logoFooter {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+}
+/* Footer */
+footer {
+  background-color: black;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: auto;
+  color: white;
+}
+
+.footerRedes {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footerTerminosPrivacidad {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footerTerminosPrivacidad ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footerTerminosPrivacidad a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footerPrivacidad a {
+  color: white;
+  text-decoration: none;
+}
+
+.logoFooter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerRedes,
+  .footerTerminosPrivacidad,
+  .logoFooter {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

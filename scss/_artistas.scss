@@ -1,0 +1,53 @@
+@import '_header';
+/* Artistas Page - Main Artistas */
+#mainArtistas {
+    background-image: url(../images/artistas/bailando-concierto-mientras-cantante-actua-rodeada-luces.jpg);
+    width: 100%;
+    min-height: calc(100vh - 128px); 
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+#mainArtistas section {
+    padding: 20px;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+#mainArtistas section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#mainArtistas section iframe {
+    width: 100%;
+    max-width: 1000px;
+}
+
+#mainArtistas #globales,
+#mainArtistas #nuevos,
+#mainArtistas #nacionales,
+#mainArtistas #recomendacionSemanal,
+#mainArtistas #recomendacionNacional {
+    background-color: rgba(255, 255, 255, 0.562);
+    width: 45%;
+    max-width: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #mainArtistas #globales,
+    #mainArtistas #nuevos,
+    #mainArtistas #nacionales,
+    #mainArtistas #recomendacionSemanal,
+    #mainArtistas #recomendacionNacional {
+        width: 90%;
+    }
+} 
+@import '_footer';
+

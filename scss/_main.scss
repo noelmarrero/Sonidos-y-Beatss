@@ -1,0 +1,45 @@
+@import '_header';
+#main {
+    width: 100%;
+    min-height: calc(100vh - 128px);
+    background-image: url(../images/index/fondo-musica-auriculares-manos-femeninas-grabadora-portatil-guitarra.jpg);
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  #main section {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#main section article img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    padding-top: 10%;
+}
+
+.ArticuloDestacado {
+    color: #171790;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: justify;
+    overflow: auto;
+}
+.ArticuloDestacado h2{
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .ArticuloDestacado {
+        width: 90%;
+        max-width: none;
+    }
+}
+@import '_footer';
