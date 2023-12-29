@@ -227,6 +227,44 @@ footer {
   margin-bottom: 10px;
 }
 
+.footerRedes {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  /* Facebook */
+  /* Twitter */
+  /* Instagram */
+  /* Spotify */
+}
+.footerRedes a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.footerRedes a i {
+  margin-right: 5px;
+}
+.footerRedes a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+.footerRedes .btn-primary {
+  background-color: #224286;
+}
+.footerRedes .btn-info {
+  background-color: #040e14;
+}
+.footerRedes .btn-danger {
+  background-color: #bd1f1f;
+}
+.footerRedes .btn-success {
+  background-color: #1db954;
+}
+
 .footerTerminosPrivacidad {
   text-align: center;
   margin-bottom: 10px;
@@ -405,6 +443,44 @@ footer {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.footerRedes {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  /* Facebook */
+  /* Twitter */
+  /* Instagram */
+  /* Spotify */
+}
+.footerRedes a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.footerRedes a i {
+  margin-right: 5px;
+}
+.footerRedes a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+.footerRedes .btn-primary {
+  background-color: #224286;
+}
+.footerRedes .btn-info {
+  background-color: #040e14;
+}
+.footerRedes .btn-danger {
+  background-color: #bd1f1f;
+}
+.footerRedes .btn-success {
+  background-color: #1db954;
 }
 
 .footerTerminosPrivacidad {
@@ -589,6 +665,44 @@ footer {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.footerRedes {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  /* Facebook */
+  /* Twitter */
+  /* Instagram */
+  /* Spotify */
+}
+.footerRedes a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.footerRedes a i {
+  margin-right: 5px;
+}
+.footerRedes a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+.footerRedes .btn-primary {
+  background-color: #224286;
+}
+.footerRedes .btn-info {
+  background-color: #040e14;
+}
+.footerRedes .btn-danger {
+  background-color: #bd1f1f;
+}
+.footerRedes .btn-success {
+  background-color: #1db954;
 }
 
 .footerTerminosPrivacidad {
@@ -776,6 +890,44 @@ footer {
   margin-bottom: 10px;
 }
 
+.footerRedes {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  /* Facebook */
+  /* Twitter */
+  /* Instagram */
+  /* Spotify */
+}
+.footerRedes a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.footerRedes a i {
+  margin-right: 5px;
+}
+.footerRedes a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+.footerRedes .btn-primary {
+  background-color: #224286;
+}
+.footerRedes .btn-info {
+  background-color: #040e14;
+}
+.footerRedes .btn-danger {
+  background-color: #bd1f1f;
+}
+.footerRedes .btn-success {
+  background-color: #1db954;
+}
+
 .footerTerminosPrivacidad {
   text-align: center;
   margin-bottom: 10px;
@@ -938,6 +1090,44 @@ footer {
   margin-bottom: 10px;
 }
 
+.footerRedes {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  /* Facebook */
+  /* Twitter */
+  /* Instagram */
+  /* Spotify */
+}
+.footerRedes a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.footerRedes a i {
+  margin-right: 5px;
+}
+.footerRedes a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+.footerRedes .btn-primary {
+  background-color: #224286;
+}
+.footerRedes .btn-info {
+  background-color: #040e14;
+}
+.footerRedes .btn-danger {
+  background-color: #bd1f1f;
+}
+.footerRedes .btn-success {
+  background-color: #1db954;
+}
+
 .footerTerminosPrivacidad {
   text-align: center;
   margin-bottom: 10px;
@@ -1000,6 +1190,44 @@ footer {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.footerRedes {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  /* Facebook */
+  /* Twitter */
+  /* Instagram */
+  /* Spotify */
+}
+.footerRedes a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.footerRedes a i {
+  margin-right: 5px;
+}
+.footerRedes a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+.footerRedes .btn-primary {
+  background-color: #224286;
+}
+.footerRedes .btn-info {
+  background-color: #040e14;
+}
+.footerRedes .btn-danger {
+  background-color: #bd1f1f;
+}
+.footerRedes .btn-success {
+  background-color: #1db954;
 }
 
 .footerTerminosPrivacidad {
